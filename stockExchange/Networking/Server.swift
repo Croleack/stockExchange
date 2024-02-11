@@ -8,7 +8,7 @@
 import Foundation
 
 class Server {
-    let queue = DispatchQueue(label: "DealsMakeQueue")
+    let queue = DispatchQueue(label: "DealsMakeQueue", attributes: .concurrent)
     let instrumentNames = [
 	   "EUR/USD_TOD",
 	   "GBP/USD_SPOT",
